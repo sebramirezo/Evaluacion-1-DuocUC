@@ -1,0 +1,42 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.logo{
+    
+    width: 100px;
+    height: auto;
+}
+
+.carrusel{
+
+    width: max-content;
+}
+
+.logonavbar{
+    width: 30px; 
+    height: auto;
+}
+
+p{
+    font-size: 15px;
+}
+
+#estilo_footer{
+
+    background-color: beige(16, 227, 235);
+    max-width: 100%;
+}
+
+#color-fondo{
+    background-color: slategrey;
+}
+
+#estilo_quienes{
+    width: 600px;
+}
+
+ul { 
+    display: inline-block; 
+    text-align: left; 
+    font-size: 15px;
+}
+
