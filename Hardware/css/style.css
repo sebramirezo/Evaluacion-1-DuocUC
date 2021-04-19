@@ -45,8 +45,13 @@ ul {
 }
 
 #img_responsiva {
+    height: 270px;
+    width: 270px;
+}
+
+#card_size{
     display: block;
-    max-width: 100%;
-    height: auto;
+    height: 170px;
+    width: 300px;
 }
 
