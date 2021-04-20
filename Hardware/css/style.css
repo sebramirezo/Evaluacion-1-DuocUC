@@ -59,15 +59,15 @@ ul {
 }
 
 .card-title{
-    color: aliceblue;
+    color:white;
 }
 .card-text{
-    color: aliceblue;
+    color: white;
     font-size: 25px;
 }
 
 .card{
-    background-color:dimgrey;
+    background-color:currentColor ;
 }
 
 .form-label{
