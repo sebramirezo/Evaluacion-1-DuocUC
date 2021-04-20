@@ -69,3 +69,11 @@ ul {
 .card{
     background-color:dimgrey;
 }
+
+.form-label{
+    font-size: 20px;
+    font-style: italic;
+}
+.form-control{
+    border-radius: 10px;
+}
