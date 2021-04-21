@@ -77,3 +77,13 @@ ul {
 .form-control{
     border-radius: 10px;
 }
+
+#form-label {
+    
+    text-decoration-color: aliceblue ;
+    background: rgb(199, 248, 199)
+}
+
+#color-form-label{
+    color: aliceblue;
+}
