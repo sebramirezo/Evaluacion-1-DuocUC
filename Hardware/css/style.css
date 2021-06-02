@@ -1,7 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 .logo{
-    
+
     width: 100px;
     height: auto;
 }
@@ -12,7 +12,7 @@
 }
 
 .logonavbar{
-    width: 30px; 
+    width: 30px;
     height: auto;
 }
 
@@ -22,21 +22,24 @@ p{
 
 #estilo_footer{
 
-    background-color: beige(16, 227, 235);
+    background-color: rgb(223, 223, 223);
     max-width: 100%;
+}
+#footer_str{
+    text-align: center;
 }
 
 #color-fondo{
-    background-color: slategrey;
+    background-color: rgb(223, 223, 223);
 }
 
 #estilo_quienes{
     width: 600px;
 }
 
-ul { 
-    display: inline-block; 
-    text-align: left; 
+ul {
+    display: inline-block;
+    text-align: left;
     font-size: 15px;
 }
 
@@ -45,7 +48,7 @@ ul {
 }
 
 .btn {
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 .card-img-top{
@@ -67,11 +70,14 @@ ul {
 }
 
 .card{
-    background-color:currentColor ;
+    width: 260px;
+    height: auto;
+    background-color:currentColor;
+    border: 10px;
 }
 
 .form-label{
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
 }
 .form-control{
@@ -79,11 +85,30 @@ ul {
 }
 
 #form-label {
-    
-    text-decoration-color: aliceblue ;
-    background: rgb(199, 248, 199)
+
+    text-decoration-color: black ;
+    background: rgb(255, 255, 255)
 }
 
 #color-form-label{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+#carrito{
+    width: 35px;
+    height: 35px;
+    text-align: left;
+}
+
+.carritoleft{
+    text-align: left;
+}
+h6{
+    text-align: center;
+}
+
+.list-group-item {
+    border-radius: 10px;
+    background-color: rgb(223, 223, 223);
+    font-size: 14px;
 }
