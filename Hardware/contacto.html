@@ -38,9 +38,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        <a class="nav-link text-white" href="#SobreNosotros">Quienes Somos</a>
+                        <a class="nav-link text-white" href="#SobreNosotros">Quiénes Somos</a>
                         <a class="nav-link text-white" href="productos.html">Productos</a>
-                        <a class="nav-link text-white" href="#">Contactanos</a>
+                        <a class="nav-link text-white" href="#">Contáctanos</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,8 @@
                     <label for="apellidos" class="form-label" id="color-form-label">Apellidos</label>
                     <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus Apellidos" >
                 </div>
-                <div class="input-group mb-3">
+                <div class=" mb-3">
+                    <label for="rut" class="form-label" id="color-form-label">RUT </label>
                     <input name="rut" id="rut" type="text" class="form-control" placeholder="Ingrese un RUT" onkeypress="return isNumber(event)" oninput="checkRut(this)" required />
                 </div>
                 <div class="mb-3">
@@ -102,7 +103,7 @@
             <div id="estilo_quienes" class="container text-center text-md-left">
                 <div class="row text-center text-md-left">
                     <div class="col-md-6 col-lg-3 col xl-6 mx-auto mt-3">
-                        <h4 id="SobreNosotros">¿Quienes somos?</h4>
+                        <h4 id="SobreNosotros">¿Quiénes somos?</h4>
                         <img class="logo" src="img/cpu.png" alt="">
                         <p>Somos una empresa de venta de software,
                         alta disponibilidad de productos,
@@ -110,7 +111,7 @@
                         TOTALMENTE On-line</p>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h4>Categorias</h4>
+                        <h4>Categorías</h4>
                         <nav>
                             <ul class="list-unstyled list-inline">
                                 <li><a class="m-2 text-white mx-auto" href="#">Pc's Completos</a></li>
@@ -126,7 +127,7 @@
                         </nav>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h4>Informacion de Contacto</h4>
+                        <h4>Información de Contacto</h4>
                         <div class="row">
                             <img src="" alt="">
                             <h6>Av. SiempreViva 123, Santiago, Chile</h6>
@@ -160,13 +161,15 @@
          var mensaje1 = "El campo Apellido es obligatorio y debe Completarse."
          var mensaje2 = "El campo Telefono es obligatorio y debe Completarse Ademas debe contener 9 dijitos."
          var mensaje3 = "El campo RUT es obligatorio y debe Completarlo"
+         var mensaje4 = "Correo electronico no tiene el formato correspondiente."
+         var mensaje5 = "Ingrese su comentario."
         $(document).ready(() => {
             $('.error').hide();
             $('#formulario').submit(function(evento){
                 let nombre = $('#nombre').val().trim();
                 let apellidos = $('#apellidos').val().trim();
                 let fono = $('#fono').val().trim();
-                let correo = $('#correo').val().trim();
+                let comentario = $('#comentario').val();
 
                 if (nombre.length < 3) {
                     $("#error").html(mensaje);
@@ -186,10 +189,19 @@
                     event.preventDefault();
                     return;
                 }
-
-                if(correo == !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo)) ) {
+                if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {
+                    $("#error").html(mensaje4);
+                    $("#error").show();
+                    event.preventDefault();
                     return false;
-                };
+                }
+
+                if(comentario.length == 0){
+                    $("#error").html(mensaje5);
+                    $("#error").show();
+                    event.preventDefault();
+                    return;
+                }
 
                 $('.error').hide();
             })
