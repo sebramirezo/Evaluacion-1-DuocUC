@@ -17,3 +17,6 @@ Toda la maquetación está respaldada con la documentación de la página oficia
 Para la toma de imágenes, fueron sacadas de la pagina pcpartes.cl, debido que no existía un lugar donde salieran fotos de buen tamaño y manera, estas fotos solo son para probar la página.
 
 Por parte de el icono, este es totalmente libre de derechos de autor, fue sacado de la pagina flaticon.com la cual da una variedad de iconos de pago y libres.
+
+--Nuevos Cambios
+Ultimos cambios realizados corresponden a creación de un carrito de compras solo para almacenar los productos que se quieran, no entrar en una fase de compra, también se agregó la validación de formularios en cuanto a nombre, apellido, rut, correo, y comentario. Además llamada a una API, creada por nosotros llamada "api.json", esta es una creación de archivo con los datos que fueron solicitados y estos a la vez son llamados con la función async y fetch para poder utilizar los datos que contiene y estos agregarlos a los productos en si.
